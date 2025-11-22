@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zac"
+version = "0.0.1"
+description = "Automotive Zonal Architecture Compiler (ZAC)"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+  {name = "Ahmet Can Kuguoglu", email = "ahmetkuguoglu@gmail.com"}
+]
+
+[project.scripts]
+zac = "zac.cli:main"
