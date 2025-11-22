@@ -16,9 +16,12 @@ __pycache__/
 # Build artifacts
 zac.egg-info/
 zac/optimizer/optimizer_core/target/
+zac.egg-info/
+*.egg-info/
 
 # Demo output
 out.json
+*.log
 
 # VS Code settings (opsiyonel)
 .vscode/
