@@ -1,0 +1,41 @@
+{
+  "vehicle": {
+    "name": "Demo Vehicle",
+    "zones": [
+      {
+        "name": "Front-Left",
+        "max_power_kw": 2.5,
+        "safety_level": "ASIL-B"
+      },
+      {
+        "name": "Front-Right",
+        "max_power_kw": 2.0,
+        "safety_level": "ASIL-B"
+      },
+      {
+        "name": "Rear",
+        "max_power_kw": 2.5
+      }
+    ]
+  },
+  "requirements": [
+    {
+      "id": "REQ_FRONT_CAM",
+      "name": "Front Camera",
+      "zone_hint": "Front-Left",
+      "safety_level": "ASIL-B"
+    },
+    {
+      "id": "REQ_REAR_RADAR",
+      "name": "Rear Radar",
+      "zone_hint": "Rear",
+      "safety_level": "ASIL-B"
+    },
+    {
+      "id": "REQ_ADAS_FUSION",
+      "name": "ADAS Fusion",
+      "zone_hint": null,
+      "safety_level": "ASIL-C"
+    }
+  ]
+}

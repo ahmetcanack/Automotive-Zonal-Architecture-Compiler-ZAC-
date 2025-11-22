@@ -1,0 +1,25 @@
+{
+  "modules": [
+    {
+      "id": "MOD_CAM_ECU",
+      "name": "Camera ECU",
+      "cost": 60.0,
+      "max_power_kw": 0.25,
+      "supported_requirements": ["REQ_FRONT_CAM"]
+    },
+    {
+      "id": "MOD_RADAR_ECU",
+      "name": "Radar ECU",
+      "cost": 80.0,
+      "max_power_kw": 0.30,
+      "supported_requirements": ["REQ_REAR_RADAR"]
+    },
+    {
+      "id": "MOD_ADAS_FUSION",
+      "name": "ADAS Fusion ECU",
+      "cost": 150.0,
+      "max_power_kw": 0.50,
+      "supported_requirements": ["REQ_ADAS_FUSION"]
+    }
+  ]
+}

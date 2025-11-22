@@ -9,7 +9,7 @@ description = "Automotive Zonal Architecture Compiler (ZAC)"
 readme = "README.md"
 requires-python = ">=3.10"
 authors = [
-  {name = "Ahmet Can Kuguoglu", email = "ahmetkuguoglu@gmail.com"}
+  {name = "Ahmet Can Kuguoglu"}
 ]
 
 [project.scripts]

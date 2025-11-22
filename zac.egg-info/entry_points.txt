@@ -1,0 +1,2 @@
+[console_scripts]
+zac = zac.cli:main
