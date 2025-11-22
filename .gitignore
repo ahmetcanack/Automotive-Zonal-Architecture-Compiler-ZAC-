@@ -1,4 +1,5 @@
 /target
+**/target/
 # Python venv
 .venv/
 
@@ -13,6 +14,7 @@ __pycache__/
 
 # Build artifacts
 zac.egg-info/
+zac/optimizer/optimizer_core/target/
 
 # Demo output
 out.json
