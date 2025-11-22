@@ -35,28 +35,32 @@ ZAC'in amacı modern zonal araç mimarilerinin tasarım sürecini standartlaşt�
 
 # 🧱 Project Structure / Proje Yapısı
 
-```text
-zac/
-  README.md
-  pyproject.toml            # Python package config
-  zac/
-    __init__.py
-    cli.py                  # Command-line interface (zac compile ...)
-    config/
-      __init__.py
-      schema.py             # JSON schema definitions
-    compiler/
-      __init__.py
-      loader.py             # Load requirements/module library
-      model.py              # Internal data models (Zone, Module, Link, etc.)
-      generator.py          # Candidate architecture generator
-      scorer.py             # Rust optimizer interface
-    optimizer_rs/           # Rust crate (optimization engine)
-      Cargo.toml
-      src/
-        lib.rs
-  docs/
-    architecture.md         # High-level system documentation
-  examples/
-    sample_requirements.json
-    sample_modules.json
+Automotive-Zonal-Architecture-Compiler-ZAC-/
+├── docs/
+│   └── architecture.md
+│
+├── examples/
+│   ├── sample_modules.json
+│   └── sample_requirements.json
+│
+├── zac/
+│   ├── cli/
+│   │   └── __init__.py          
+│   │
+│   ├── compiler/
+│   │   ├── generator.py
+│   │   ├── loader.py
+│   │   ├── model.py
+│   │   └── scorer.py
+│   │
+│   ├── core/                     
+│   ├── graph/                    
+│   ├── optimizer/                
+│   │
+│   ├── __init__.py
+│   └── __main__.py               
+│
+├── .gitignore
+├── README.md
+├── main.py                       
+└── pyproject.toml

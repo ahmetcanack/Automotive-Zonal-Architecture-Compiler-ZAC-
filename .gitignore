@@ -11,5 +11,11 @@
 # Python cache
 __pycache__/
 
+# Build artifacts
+zac.egg-info/
+
+# Demo output
+out.json
+
 # VS Code settings (opsiyonel)
 .vscode/
