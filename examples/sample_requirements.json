@@ -5,37 +5,55 @@
       {
         "name": "Front-Left",
         "max_power_kw": 2.5,
-        "safety_level": "ASIL-B"
+        "safety_level": "ASIL-B",
+        "latency_budget_ms": 5.0,
+        "position": { "x": 1.5, "y": 2.5 }
       },
       {
         "name": "Front-Right",
         "max_power_kw": 2.0,
-        "safety_level": "ASIL-B"
+        "safety_level": "ASIL-B",
+        "latency_budget_ms": 6.0,
+        "position": { "x": -1.5, "y": 2.5 }
       },
       {
         "name": "Rear",
-        "max_power_kw": 2.5
+        "max_power_kw": 2.5,
+        "latency_budget_ms": 8.0,
+        "position": { "x": 0.0, "y": -2.5 }
       }
     ]
   },
-  "requirements": [
+  "features": [
     {
-      "id": "REQ_FRONT_CAM",
+      "id": "FEAT_FRONT_CAM",
       "name": "Front Camera",
+      "description": "Primary forward-facing vision",
       "zone_hint": "Front-Left",
-      "safety_level": "ASIL-B"
+      "zone_candidates": ["Front-Left", "Front-Right"],
+      "safety_level": "ASIL-B",
+      "latency_budget_ms": 15.0,
+      "redundancy": 1
     },
     {
-      "id": "REQ_REAR_RADAR",
+      "id": "FEAT_REAR_RADAR",
       "name": "Rear Radar",
+      "description": "Rear sensing radar",
       "zone_hint": "Rear",
-      "safety_level": "ASIL-B"
+      "zone_candidates": ["Rear"],
+      "safety_level": "ASIL-B",
+      "latency_budget_ms": 18.0,
+      "redundancy": 1
     },
     {
-      "id": "REQ_ADAS_FUSION",
+      "id": "FEAT_ADAS_FUSION",
       "name": "ADAS Fusion",
+      "description": "Sensor fusion and decision unit",
       "zone_hint": null,
-      "safety_level": "ASIL-C"
+      "zone_candidates": ["Front-Left", "Front-Right"],
+      "safety_level": "ASIL-C",
+      "latency_budget_ms": 25.0,
+      "redundancy": 1
     }
   ]
 }

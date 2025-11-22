@@ -1,0 +1,24 @@
+{
+  "zones": [
+    {
+      "name": "Front-Left",
+      "max_power_kw": 2.5,
+      "safety_level": "ASIL-B",
+      "latency_budget_ms": 5.0,
+      "position": { "x": 1.5, "y": 2.5 }
+    },
+    {
+      "name": "Front-Right",
+      "max_power_kw": 2.0,
+      "safety_level": "ASIL-B",
+      "latency_budget_ms": 6.0,
+      "position": { "x": -1.5, "y": 2.5 }
+    },
+    {
+      "name": "Rear",
+      "max_power_kw": 2.5,
+      "latency_budget_ms": 8.0,
+      "position": { "x": 0.0, "y": -2.5 }
+    }
+  ]
+}
