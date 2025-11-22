@@ -2,6 +2,9 @@
 # Python venv
 .venv/
 
+# Vscode settings
+.vscode/
+
 # macOS junk
 .DS_Store
 
