@@ -1,6 +1,6 @@
 # ZAC – Zonal Architecture Compiler  
 *(English + Türkçe)*
-
+Author: Ahmet Can Kuğuoğlu
 ---
 
 # 📌 Overview / Genel Bakış
