@@ -1,0 +1,62 @@
+# ZAC – Zonal Architecture Compiler  
+*(English + Türkçe)*
+
+---
+
+# 📌 Overview / Genel Bakış
+
+**EN:**  
+ZAC (Zonal Architecture Compiler) is a tooling framework that takes vehicle-level requirements and module libraries as input, and automatically generates optimized zonal E/E architectures. It aims to help OEMs and suppliers evaluate different topology candidates, minimize wiring complexity, reduce cost, and meet safety & redundancy constraints.
+
+**TR:**  
+ZAC (Zonal Architecture Compiler), araç seviyesindeki gereksinimleri ve modül kütüphanelerini girdi olarak alıp, otomatik olarak optimize edilmiş zonal E/E mimarileri üreten bir çerçevedir. OEM’lerin ve tedarikçilerin farklı topoloji adaylarını değerlendirmesine, kablo karmaşıklığını ve maliyeti azaltmasına, güvenlik ve yedeklilik kurallarını sağlamasına yardımcı olur.
+
+---
+
+# 🎯 Purpose & Goals / Amaç ve Hedefler
+
+**EN:**  
+The goal of ZAC is to standardize and automate the design process of modern zonal vehicle architectures by:
+
+- Converting raw requirements into a formal internal model  
+- Generating possible zonal topologies  
+- Scoring them through a Rust-based optimization engine  
+- Selecting the best candidates according to cost, wiring length, safety, and power constraints  
+
+**TR:**  
+ZAC'in amacı modern zonal araç mimarilerinin tasarım sürecini standartlaştırmak ve otomatikleştirmektir:
+
+- Ham gereksinimleri iç modelimize dönüştürmek  
+- Olası zonal topolojileri üretmek  
+- Bu topolojileri Rust tabanlı bir optimize ediciyle puanlamak  
+- Maliyet, kablo uzunluğu, güvenlik ve güç limitlerine göre en iyi adayları seçmek
+
+---
+
+# 🧱 Project Structure / Proje Yapısı
+
+```text
+zac/
+  README.md
+  pyproject.toml            # Python package config
+  zac/
+    __init__.py
+    cli.py                  # Command-line interface (zac compile ...)
+    config/
+      __init__.py
+      schema.py             # JSON schema definitions
+    compiler/
+      __init__.py
+      loader.py             # Load requirements/module library
+      model.py              # Internal data models (Zone, Module, Link, etc.)
+      generator.py          # Candidate architecture generator
+      scorer.py             # Rust optimizer interface
+    optimizer_rs/           # Rust crate (optimization engine)
+      Cargo.toml
+      src/
+        lib.rs
+  docs/
+    architecture.md         # High-level system documentation
+  examples/
+    sample_requirements.json
+    sample_modules.json
