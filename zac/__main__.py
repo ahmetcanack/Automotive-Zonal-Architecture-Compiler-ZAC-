@@ -2,11 +2,11 @@
 Entry point for `python -m zac`.
 
 EN:
-    This module allows running ZAC as a module:
+    Allows running ZAC as a module:
         python -m zac ...
 
 TR:
-    Bu modül ZAC'in modül olarak çalıştırılmasını sağlar:
+    ZAC'i modül olarak çalıştırmanızı sağlar:
         python -m zac ...
 """
 
