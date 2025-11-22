@@ -1,1 +1,12 @@
 /target
+# Python venv
+.venv/
+
+# macOS junk
+.DS_Store
+
+# Python cache
+__pycache__/
+
+# VS Code settings (opsiyonel)
+.vscode/
