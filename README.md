@@ -35,6 +35,7 @@ ZAC'in amacı modern zonal araç mimarilerinin tasarım sürecini standartlaşt�
 
 # 🧱 Project Structure / Proje Yapısı
 
+```text
 Automotive-Zonal-Architecture-Compiler-ZAC-/
 ├── docs/
 │   └── architecture.md
@@ -45,7 +46,7 @@ Automotive-Zonal-Architecture-Compiler-ZAC-/
 │
 ├── zac/
 │   ├── cli/
-│   │   └── __init__.py          
+│   │   └── __init__.py
 │   │
 │   ├── compiler/
 │   │   ├── generator.py
@@ -53,14 +54,14 @@ Automotive-Zonal-Architecture-Compiler-ZAC-/
 │   │   ├── model.py
 │   │   └── scorer.py
 │   │
-│   ├── core/                     
-│   ├── graph/                    
-│   ├── optimizer/                
+│   ├── core/
+│   ├── graph/
+│   ├── optimizer/
 │   │
 │   ├── __init__.py
-│   └── __main__.py               
+│   └── __main__.py
 │
 ├── .gitignore
 ├── README.md
-├── main.py                       
+├── main.py
 └── pyproject.toml
