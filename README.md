@@ -35,8 +35,6 @@ ZAC'in amacı modern zonal araç mimarilerinin tasarım sürecini standartlaşt�
 
 # 🧱 Project Structure / Proje Yapısı
 
-## 🧱 Project Structure / Proje Yapısı
-
 ```text
 Automotive-Zonal-Architecture-Compiler-ZAC-/
 ├── docs/
